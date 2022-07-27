@@ -4,7 +4,7 @@ Hello, I just finished a data analysis project about sales of the supermarket. T
 Based on the analysis that has been done, the following insights and suggestions are obtained.
 
 1. The company's total sales and margin income during January-March 2019 was around 322,967 USD and 15,379 USD For each branch: 
-Total sales and income margin of branch A : 106,200 USD and 5,057 USD 
+/n Total sales and income margin of branch A : 106,200 USD and 5,057 USD 
 Total sales and income margin of branch B : 106,198 USD 5,057 USD 
 Total sales and income margin of branch C: 110,569 USD and 5,265 USD 
 The highest total sales and margin were obtained by branch A  
