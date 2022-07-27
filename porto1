@@ -1,0 +1,54 @@
+/*Creating table and Importing Data*/
+create table salestable (
+  Invoice_ID varchar, 
+  Branch char, 
+  City varchar, 
+  Customer_type varchar, 
+  Gender varchar, 
+  Product_line varchar, 
+  Unit_price float, 
+  Quantity int,
+  Tax float, 
+  Total float, 
+  Date varchar, 
+  Time varchar,
+  Payment varchar,
+  cogs float,
+  gross_margin_percentage float, 
+  gross_income float,
+  rating float);  /*creating table*/
+copy salestable from 'C:\Program Files\PostgreSQL\14\data\supermarketsales.csv'DELIMITER','CSV HEADER;/*import table csv from directory*/
+
+select* from salestable;
+select count (invoice_id) from salestable;/*cleaning data, checking duplicated data */
+select distinct* from salestable;
+select count (invoice_id) from salestable;
+delete from salestable where invoice_id=null
+    or branch= null
+    or city= null
+    or customer_type= null
+    or gender= null
+    or product_line= null
+    or unit_price= null
+    or quantity= null
+    or tax= null
+    or total= null
+    or date= null
+    or time= null
+    or payment= null
+    or cogs= null
+    or gross_margin_percentage= null
+    or gross_income= null
+    or rating= null
+    or margin_income_coloumn= null
+
+/*Data Analysis Process*/
+alter table salestable drop margin_income;
+alter table salestable add margin float;/*Adding coloumn*/
+update salestable set margin =(Total*gross_margin_percentage)/100 where TRUE;
+
+select* from salestable;
+select distinct invoice_id from salestable;
+select branch, sum (Total) from salestable group by branch;/*Determine total sales of each branch*/
+select branch, sum (margin_income_coloumn) from salestable group by Branch;/*Determine total margin income of each branch*/
+select branch, avg (rating) from salestable group by branch;/*Determine rating of each branch*/ 
