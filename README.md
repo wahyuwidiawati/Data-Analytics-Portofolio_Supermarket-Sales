@@ -1,5 +1,5 @@
 # Data-Analytics-Portofolio_Supermarket-Sales
-Hello, I just finished a data analysis project about sales of the supermarket. The data source I use comes from kaggle (https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales). I analyzed this data using postgreSQL and visualized it using google data studio. My code and dashboard is attached to the porto1.pdf and Dashboard.pdf file. For more details, it can also be accessed via the following link: https://datastudio.google.com/s/h4wU963cYVg 
+Hello, I just finished a data analysis project about supermarket sales. The data source I use comes from kaggle (https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales). I analyzed this data using postgreSQL and visualized it using google data studio. My code and dashboard is attached to the porto1.pdf and Dashboard.pdf file. For more details, it can also be accessed via the following link: https://datastudio.google.com/s/h4wU963cYVg 
 
 Based on the analysis that has been done, the following insights and suggestions are obtained.
 
